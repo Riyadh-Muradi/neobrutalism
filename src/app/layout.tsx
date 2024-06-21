@@ -29,8 +29,8 @@ export default function RootLayout({ children }: RootLayoutProps) {
             disableTransitionOnChange
           >
             <Navbar />
-            <main className="flex-1">{children}</main>
-            {/* <Footer /> */}
+            {children}
+            <Footer />
           </ThemeProvider>
         </body>
       </html>
