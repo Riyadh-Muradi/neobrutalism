@@ -1,42 +1,41 @@
 // Routes
-export const routeList = [
-  { href: "#1", label: "1" },
-  { href: "#2", label: "2" },
-  { href: "#3", label: "3" },
-  { href: "#4", label: "4" },
-  { href: "#5", label: "5" },
+export const routeLinks = [
+  { href: "#home", label: "Home" },
+  { href: "#about", label: "About" },
+  { href: "#prodcuts", label: "Prodcuts" },
+  { href: "#blog", label: "Blog" },
 ];
 
 // Dropdown Data
-export const components = [
+export const productLinks = [
   {
-    title: "1",
+    title: "Product 1",
     href: "/",
-    description: "1",
+    description: "Product 1 description",
   },
   {
-    title: "2",
+    title: "Product 2",
     href: "/",
-    description: "2",
+    description: "Product 2 description",
   },
   {
-    title: "3",
+    title: "Product 3",
     href: "/",
-    description: "3",
+    description: "Product 3 description",
   },
   {
-    title: "4",
+    title: "Product 4",
     href: "/",
-    description: "4",
+    description: "Product 4 description",
   },
   {
-    title: "5",
+    title: "Product 5",
     href: "/",
-    description: "5",
+    description: "Product 5 description",
   },
   {
-    title: "6",
+    title: "Product 6",
     href: "/",
-    description: "6",
+    description: "Product 6 description",
   },
 ];

@@ -8,7 +8,8 @@ import {
 } from "@/components/ui/sheet";
 import { Github, Menu } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
-import { routeList } from "@/data/data";
+import { routeLinks } from "@/data/data";
+import Link from "next/link";
 
 interface MobileNavbarProps {
   isOpen: boolean;
@@ -32,8 +33,8 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, setIsOpen }) => (
           </SheetTitle>
         </SheetHeader>
         <nav className="flex flex-col items-center justify-center gap-2">
-          {routeList.map(({ href, label }) => (
-            <a
+          {routeLinks.map(({ href, label }) => (
+            <Link
               rel="noreferrer noopener"
               key={label}
               href={href}
@@ -41,11 +42,11 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, setIsOpen }) => (
               className={`bg-white hover:bg-main ${buttonVariants({ variant: "default" })}`}
             >
               {label}
-            </a>
+            </Link>
           ))}
         </nav>
         <div className="flex items-center justify-center space-x-4">
-          <a
+          <Link
             rel="noreferrer noopener"
             href="https://github.com/Riyadh-Muradi/neobrutalism"
             target="_blank"
@@ -53,7 +54,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, setIsOpen }) => (
           >
             <Github className="mr-2 h-6 w-6" />
             Github
-          </a>
+          </Link>
         </div>
       </SheetContent>
     </Sheet>
