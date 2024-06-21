@@ -8,8 +8,7 @@ export const Hero = () => {
         <main className="text-center text-5xl font-bold md:text-6xl">
           <h1 className="inline dark:text-black">neobrutalism design</h1>
         </main>
-
-        <p className="mx-auto flex justify-center text-center text-xl dark:text-black md:w-10/12">
+        <p className="flex justify-center text-center text-xl dark:text-black">
           A modern and minimalist design system for your next project.
         </p>
 

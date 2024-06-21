@@ -17,11 +17,11 @@ interface MobileNavbarProps {
 }
 
 const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, setIsOpen }) => (
-  <span className="flex items-center md:hidden">
+  <span className="ml-28 flex items-center md:hidden">
     <Sheet open={isOpen} onOpenChange={setIsOpen}>
       <SheetTrigger>
         <Menu
-          className="flex h-5 w-5 md:hidden"
+          className="flex h-6 w-6 md:hidden"
           onClick={() => setIsOpen(true)}
         />
         <span className="sr-only">Menu Icon</span>
@@ -48,7 +48,7 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, setIsOpen }) => (
             target="_blank"
             className={`w-[110px] border ${buttonVariants({ variant: "default" })}`}
           >
-            <Github className="mr-2 h-5 w-5" />
+            <Github className="mr-2 h-6 w-6" />
             Github
           </a>
         </nav>

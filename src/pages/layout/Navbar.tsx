@@ -25,7 +25,7 @@ const Navbar: React.FC = () => {
     <NavigationMenu className="relative mx-auto flex">
       <NavigationMenuList className="flex items-center">
         {/* Title on the left */}
-        <div className="lg:mr-80 mr-2 flex items-center md:mr-24">
+        <div className="lg:mr-42 mr-2 flex items-center md:mr-24 xl:mr-80">
           <NavigationMenuItem className="font-bold">
             <a
               rel="noreferrer noopener"
@@ -34,12 +34,14 @@ const Navbar: React.FC = () => {
             >
               Neobrutalism
             </a>
-            <Pen className="mr-2 mt-[2.5px] flex md:hidden" />
+            <div className="mr-28">
+              <Pen className="flex h-6 w-6 md:hidden" />
+            </div>
           </NavigationMenuItem>
         </div>
 
         {/* Navigation links in the center */}
-        <div className="flex items-center">
+        <div className="hidden items-center md:flex">
           <NavigationMenuItem>
             <ReusableLink href="https://ui.shadcn.com/docs" label="1" />
           </NavigationMenuItem>
@@ -73,7 +75,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* GitHub link and ThemeToggle on the right */}
-        <div className="lg:ml-80 ml-2 flex items-center md:ml-24">
+        <div className="lg:ml-42 flex items-center md:ml-24 xl:ml-80">
           <div className="mr-2 hidden items-center space-x-2 md:flex">
             <a
               rel="noreferrer noopener"
@@ -81,13 +83,14 @@ const Navbar: React.FC = () => {
               target="_blank"
               className={`border ${buttonVariants({ variant: "default" })}`}
             >
-              <Github className="h-5 w-5" />
+              <Github className="h-6 w-6" />
               Github
             </a>
             <ThemeToggle />
           </div>
 
           {/* Mobile menu */}
+
           <MobileNavbar isOpen={isOpen} setIsOpen={setIsOpen} />
         </div>
       </NavigationMenuList>
