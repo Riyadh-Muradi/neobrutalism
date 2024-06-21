@@ -11,9 +11,8 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { Github, LogOut, Pen } from "lucide-react";
+import { Github, Pen } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
-import { ThemeToggle } from "@/components/ThemeToggle";
 import { cn } from "@/lib/utils";
 import MobileNavbar from "./MobileNavbar";
 import { components } from "@/data/data";
@@ -41,7 +40,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* Navigation links in the center */}
-        <div className="hidden items-center md:flex">
+        <div className="hidden items-center gap-2 md:flex">
           <NavigationMenuItem>
             <ReusableLink href="https://ui.shadcn.com/docs" label="1" />
           </NavigationMenuItem>
@@ -81,12 +80,11 @@ const Navbar: React.FC = () => {
               rel="noreferrer noopener"
               href="https://github.com/Riyadh-Muradi/neobrutalism"
               target="_blank"
-              className={`border ${buttonVariants({ variant: "default" })}`}
+              className={`bg-white hover:bg-main ${buttonVariants({ variant: "default" })}`}
             >
               <Github className="h-6 w-6" />
               Github
             </a>
-            <ThemeToggle />
           </div>
 
           {/* Mobile menu */}
@@ -107,7 +105,7 @@ const ListItem = React.forwardRef<
       <a
         ref={ref}
         className={cn(
-          "hover:bg-accent block select-none space-y-1 rounded-base border-2 border-transparent p-3 leading-none no-underline outline-none transition-colors hover:border-black hover:dark:border-white",
+          "hover:bg-accent block select-none space-y-1 rounded-base border-2 border-transparent p-3 leading-none no-underline outline-none transition-colors hover:border-black hover:bg-main",
           className,
         )}
         {...props}
