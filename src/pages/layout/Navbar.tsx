@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
 
   return (
     <NavigationMenu className="mx-auto">
-      <NavigationMenuList className="container flex w-[90vw] items-center justify-between">
+      <NavigationMenuList className="flex w-[90vw] items-center justify-between">
         {/* Title on the left */}
         <div className="flex items-center">
           <NavigationMenuItem className="font-bold">
@@ -74,14 +74,14 @@ const Navbar: React.FC = () => {
 
         {/* GitHub link and ThemeToggle on the right */}
         <div className="flex items-center">
-          <div className="hidden items-center space-x-2 md:flex">
+          <div className="mr-2 hidden items-center space-x-2 md:flex">
             <a
               rel="noreferrer noopener"
               href="https://github.com/Riyadh-Muradi/neobrutalism"
               target="_blank"
               className={`border ${buttonVariants({ variant: "default" })}`}
             >
-              <Github className="mr-2 h-5 w-5" />
+              <Github className="h-5 w-5" />
               Github
             </a>
             <ThemeToggle />
