@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="m500:text-sm z-40 flex h-16 w-[90.3vw] items-center justify-center rounded-base border-2 border-black bg-main text-center font-base dark:border-white">
+    <footer className="m500:text-sm relative z-40 mx-auto flex h-16 items-center justify-center rounded-base border-2 border-black bg-main text-center font-base dark:border-white">
       The source code is available on
       <a
         target="_blank"

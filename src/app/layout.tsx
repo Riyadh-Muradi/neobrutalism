@@ -20,7 +20,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <>
       <html lang="en" suppressHydrationWarning>
-        <body className="relative flex flex-col items-center">
+        <body>
           <ThemeProvider
             attribute="class"
             defaultTheme="system"

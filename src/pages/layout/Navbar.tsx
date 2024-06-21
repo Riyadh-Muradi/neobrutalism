@@ -22,10 +22,10 @@ const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <NavigationMenu className="mx-auto">
-      <NavigationMenuList className="flex w-[90vw] items-center justify-between">
+    <NavigationMenu className="relative mx-auto flex">
+      <NavigationMenuList className="flex items-center">
         {/* Title on the left */}
-        <div className="flex items-center">
+        <div className="lg:mr-80 mr-2 flex items-center md:mr-24">
           <NavigationMenuItem className="font-bold">
             <a
               rel="noreferrer noopener"
@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
         </div>
 
         {/* GitHub link and ThemeToggle on the right */}
-        <div className="flex items-center">
+        <div className="lg:ml-80 ml-2 flex items-center md:ml-24">
           <div className="mr-2 hidden items-center space-x-2 md:flex">
             <a
               rel="noreferrer noopener"
