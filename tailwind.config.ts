@@ -14,7 +14,6 @@ const config = {
       colors: {
         bg: "#dfe5f2",
         main: "#88aaee",
-        mainAccent: "#4d80e6", // not needed for shadcn
       },
       borderRadius: {
         base: "4px",

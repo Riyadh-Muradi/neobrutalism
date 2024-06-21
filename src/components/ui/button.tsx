@@ -11,10 +11,10 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "bg-main border-2 border-black shadow-base hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none",
-        noShadow: "bg-main border-2 border-black",
+          "bg-main border-2 dark:border-white dark:text-white border-black dark:shadow-white shadow-base hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:shadow-none",
+        noShadow: "bg-main border-2 dark:border-white border-black",
         link: "underline-offset-4 hover:underline",
-        neutral: "bg-white border-2 border-black",
+        neutral: "bg-white border-2 border-black dark:border-white",
       },
       size: {
         default: "h-10 px-4 py-2",

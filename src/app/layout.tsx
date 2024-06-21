@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../styles/globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import Footer from "@/pages/layout/Footer";
+import Navbar from "@/pages/layout/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,14 +21,16 @@ export default function RootLayout({ children }: RootLayoutProps) {
     <>
       <html lang="en" suppressHydrationWarning>
         <head />
-        <body>
+        <body className="flex items-center justify-center">
           <ThemeProvider
             attribute="class"
             defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
-            {children}
+            <Navbar />
+            <main className="flex-1">{children}</main>
+            {/* <Footer /> */}
           </ThemeProvider>
         </body>
       </html>

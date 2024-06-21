@@ -1,11 +1,5 @@
-import { ThemeToggle } from "@/components/ThemeToggle";
-
 export default function Home() {
-  return (
-    <main>
-      <ThemeToggle />
-    </main>
-  );
+  return <div className="container relative"></div>;
 }
 
 {
