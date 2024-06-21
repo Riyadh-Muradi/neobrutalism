@@ -28,14 +28,13 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, setIsOpen }) => (
       </SheetTrigger>
       <SheetContent side="right">
         <SheetHeader>
-          <SheetTitle className="flex h-12 items-center justify-center border-2 border-black bg-white text-xl font-bold text-black hover:bg-main">
-            neobrutalism
+          <SheetTitle className="flex h-12 items-center justify-center border-2 border-black bg-white text-xl font-bold text-black shadow-base hover:translate-x-boxShadowX hover:translate-y-boxShadowY hover:bg-main hover:shadow-none">
+            <Link href="/">Neobrutalism</Link>
           </SheetTitle>
         </SheetHeader>
         <nav className="flex flex-col items-center justify-center gap-2">
           {routeLinks.map(({ href, label }) => (
             <Link
-              rel="noreferrer noopener"
               key={label}
               href={href}
               onClick={() => setIsOpen(false)}
@@ -47,7 +46,6 @@ const MobileNavbar: React.FC<MobileNavbarProps> = ({ isOpen, setIsOpen }) => (
         </nav>
         <div className="flex items-center justify-center space-x-4">
           <Link
-            rel="noreferrer noopener"
             href="https://github.com/Riyadh-Muradi/neobrutalism"
             target="_blank"
             className={`bg-white hover:bg-main ${buttonVariants({ variant: "default" })}`}

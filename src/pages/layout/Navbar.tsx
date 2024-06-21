@@ -26,12 +26,8 @@ const Navbar: React.FC = () => {
       <NavigationMenu className="relative mx-auto flex">
         <NavigationMenuList className="flex items-center">
           <div className="lg:mr-42 flex items-center md:mr-20 xl:mr-80">
-            <NavigationMenuItem className="font-bold">
-              <Link
-                href="/"
-                rel="noreferrer noopener"
-                className="hidden text-xl font-bold md:flex"
-              >
+            <NavigationMenuItem>
+              <Link href="/" className="hidden text-xl font-bold md:flex">
                 Neobrutalism
               </Link>
               <div className="mr-28">
@@ -73,7 +69,6 @@ const Navbar: React.FC = () => {
             <div className="hidden items-center space-x-2 md:flex">
               <Link
                 href="https://github.com/Riyadh-Muradi/neobrutalism"
-                rel="noreferrer noopener"
                 target="_blank"
                 className={`bg-white hover:bg-main ${buttonVariants({ variant: "default" })}`}
               >

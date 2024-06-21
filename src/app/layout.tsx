@@ -7,8 +7,8 @@ import Navbar from "@/pages/layout/Navbar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "neobrutalism",
-  description: "neobrutalism site",
+  title: "Neobrutalism",
+  description: "Neobrutalism style",
 };
 
 type RootLayoutProps = {
