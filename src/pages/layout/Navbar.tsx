@@ -11,11 +11,12 @@ import {
   NavigationMenuTrigger,
   navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
-import { Github, Pen } from "lucide-react";
+import { Pen } from "lucide-react";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import MobileNavbar from "./MobileNavbar";
 import { productLinks, routeLinks } from "@/data/data";
+import { GitHubLogoIcon } from "@radix-ui/react-icons";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -72,7 +73,7 @@ const Navbar: React.FC = () => {
                 target="_blank"
                 className={`bg-white hover:bg-main ${buttonVariants({ variant: "default" })}`}
               >
-                <Github className="h-6 w-6" />
+                <GitHubLogoIcon className="mr-2 h-6 w-6" />
                 Github
               </Link>
             </div>
