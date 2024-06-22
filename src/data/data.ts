@@ -6,7 +6,7 @@ export const routeLinks = [
   { href: "#blog", label: "Blog" },
 ];
 
-// Dropdown Data
+// Products
 export const productLinks = [
   {
     title: "Product 1",
@@ -38,4 +38,14 @@ export const productLinks = [
     href: "/",
     description: "Product 6 description",
   },
+];
+
+// CMS
+export const cmsItems = [
+  "React",
+  "Typescript",
+  "Tailwindcss",
+  "Nextjs",
+  "Shadcn/ui",
+  "Neobrutalism",
 ];
