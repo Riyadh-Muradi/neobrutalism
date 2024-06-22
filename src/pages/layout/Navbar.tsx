@@ -104,7 +104,7 @@ const ListItem = React.forwardRef<HTMLAnchorElement, ListItemProps>(
           {...props}
         >
           <div className="text-base font-heading leading-none">{title}</div>
-          <p className="text-muted-foreground line-clamp-2 text-sm font-base leading-snug">
+          <p className="line-clamp-2 text-sm font-base leading-snug">
             {children}
           </p>
         </a>
