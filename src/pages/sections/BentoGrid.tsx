@@ -1,6 +1,7 @@
+import exp from "constants";
 import Image from "next/image";
 
-export const BentoGrid = () => {
+const BentoGrid = () => {
   return (
     <section className="inset-0 flex w-full flex-col items-center justify-center border-2 border-black bg-main bg-[linear-gradient(to_right,#00000033_1px,transparent_1px),linear-gradient(to_bottom,#00000033_1px,transparent_1px)] bg-[size:70px_70px] p-24">
       <div className="relative z-20 gap-3 space-y-4 sm:grid sm:grid-cols-[0.8fr_1fr_1fr] sm:grid-rows-2 sm:space-y-0">
@@ -87,3 +88,5 @@ export const BentoGrid = () => {
     </section>
   );
 };
+
+export default BentoGrid;

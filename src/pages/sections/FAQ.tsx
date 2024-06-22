@@ -5,7 +5,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-export const FAQ = () => {
+const FAQ = () => {
   return (
     <section className="border-2 border-black bg-white py-12 font-base">
       <h2 className="m1300:text-3xl m700:text-2xl m500:text-xl mb-8 text-center text-4xl font-heading">
@@ -47,3 +47,5 @@ export const FAQ = () => {
     </section>
   );
 };
+
+export default FAQ;

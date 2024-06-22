@@ -1,7 +1,7 @@
-import { BentoGrid } from "@/pages/sections/BentoGrid";
-import { CMS } from "@/pages/sections/CMS";
-import { FAQ } from "@/pages/sections/FAQ";
-import { Hero } from "@/pages/sections/Hero";
+import BentoGrid from "@/pages/sections/BentoGrid";
+import CMS from "@/pages/sections/CMS";
+import FAQ from "@/pages/sections/FAQ";
+import Hero from "@/pages/sections/Hero";
 
 export default function Home() {
   return (

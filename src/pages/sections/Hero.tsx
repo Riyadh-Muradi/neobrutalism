@@ -2,7 +2,7 @@ import { Button, buttonVariants } from "@/components/ui/button";
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
-export const Hero = () => {
+const Hero = () => {
   return (
     <section className="inset-0 flex w-full flex-col items-center justify-center gap-10 border-2 border-black bg-white bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:70px_70px] py-20 font-base md:py-32">
       <div className="max-w-7xl space-y-6 text-center">
@@ -53,3 +53,5 @@ export const Hero = () => {
     </section>
   );
 };
+
+export default Hero;
